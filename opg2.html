@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <title>HTML5 </title>
 
+<style>
 
+body {background-color:tan}
+
+</style>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
@@ -17,9 +23,10 @@
 <input type="button" onclick="visAntalT();" value="click" />
 </form>
 
-
+<h2>Antal T = ?</h2>
 
 <script>
+
 
 var antalT = 0;
 
@@ -39,8 +46,8 @@ for(var i=0; i<t.length; i++){
 
 }
 
-
-alert("antalT = "+antalT);
+$("h2").html("Antal T = "+antalT).css("color","red");
+// alert("antalT = "+antalT);
 antalT = 0;
 
 
