@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML5 </title>
+
+
+</head>
+
+<body>
+<h1>Javascript opgave 2</h1>
+
+<form id="bestilling">
+<textarea rows="4" cols="50" name="textInput" id="textInput">Dette er en tekst
+</textarea>
+
+<input type="button" onclick="visAntalT();" value="click" />
+</form>
+
+
+
+<script>
+
+var antalT = 0;
+
+function visAntalT(){
+
+var t = document.getElementById("textInput").value;
+for(var i=0; i<t.length; i++){
+
+	//document.write("<p>"+t.charAt(i)+"</p>");
+	
+	// c
+	if (t.charAt(i) == "t"){
+		//document.write("<h1>*</h1>");
+		antalT += 1;
+	}
+	
+
+}
+
+
+alert("antalT = "+antalT);
+antalT = 0;
+
+
+}
+
+
+</script>
+</body>
+</html>
