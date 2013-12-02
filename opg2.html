@@ -3,30 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>HTML5 </title>
-
 <style>
-
 body {background-color:tan}
+
+
 #wrapper {
 	width:980px;
 	margin: 10px auto;
-
  } 
-
 </style>
-
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
-
 <body>
 <div id="wrapper">
-<h1>Javascript opgave 2</h1>
+<h1>Javascript exercise 2</h1>
+<p>This is a small example of the us of javascript and jquery
+</p> 
 
 <form id="bestilling">
 <textarea rows="4" cols="50" name="textInput" id="textInput">Dette er en tekst
 </textarea>
 
-<input type="button" onclick="visAntalT();" value="click" />
+<input type="button" onclick="showNumberOfT();" value="click" />
 </form>
 
 <h2>Antal T = ?</h2>
@@ -37,7 +35,7 @@ body {background-color:tan}
 
 var antalT = 0;
 
-function visAntalT(){
+function showNumberOfT(){
 
 var t = document.getElementById("textInput").value;
 for(var i=0; i<t.length; i++){
@@ -63,4 +61,4 @@ antalT = 0;
 
 </script>
 </body>
-</html>
+</html/>
